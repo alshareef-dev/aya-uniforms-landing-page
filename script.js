@@ -164,7 +164,14 @@
       document.head.appendChild(s);
     }
 
-    setTimeout(() => {
+    const formData = new FormData(form);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
       btn.classList.add('is-success');
       btn.innerHTML = ICON_OK + ' تم الإرسال بنجاح!';
       if (note) note.textContent = 'سيتواصل معكم فريقنا قريبًا 🎉';
@@ -176,7 +183,13 @@
         if (note) note.textContent = 'سيتواصل معكم فريقنا خلال 24 ساعة';
         form.reset();
       }, 4500);
-    }, 1200);
+    })
+    .catch(error => {
+      console.error('Netlify Form submission error:', error);
+      btn.disabled = false;
+      btn.innerHTML = ICON_SEND + ' إرسال الطلب (فشل الإرسال)';
+      if (note) note.textContent = 'حدث خطأ أثناء الإرسال، يرجى المحاولة مجدداً.';
+    });
   });
 })();
 
