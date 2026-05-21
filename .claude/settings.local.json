@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3)",
+      "Bash(mv image_1.jpg hero.jpg)",
+      "Bash(mv image_2.jpg gallery-retail.jpg)",
+      "Bash(mv image_3.jpg gallery-transport.jpg)",
+      "Bash(mv image_4.jpg gallery-telecom.jpg)",
+      "Bash(mv image_5.jpg gallery-metro.jpg)"
+    ]
+  }
+}

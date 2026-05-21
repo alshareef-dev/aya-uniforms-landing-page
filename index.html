@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="عبايات رسمية مخصصة للشركات — تصاميم احترافية تعكس هوية علامتكم التجارية، بخامات راقية وتطريز عالي الجودة">
+  <title>Aya Uniforms — عبايات رسمية للشركات</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+  <!-- ═══════════════════════ NAV ═══════════════════════ -->
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <div class="nav__inner">
+
+        <a href="#" class="nav__logo" aria-label="Aya Uniforms — الرئيسية">
+          <img src="assets/aya-logo-en.svg" alt="آيا" width="120" height="43">
+          <span class="nav__logo-sub">Uniforms</span>
+        </a>
+
+        <nav class="nav__links" aria-label="روابط التنقل">
+          <a href="#about" class="nav__link">من نحن</a>
+          <a href="#gallery" class="nav__link">المعرض</a>
+          <a href="#why" class="nav__link">أهمية الزي الموحد</a>
+          <a href="#features" class="nav__link">مميزاتنا</a>
+          <a href="#process" class="nav__link">كيف نعمل</a>
+        </nav>
+
+        <a href="#form" class="nav__cta">طلب عرض سعر</a>
+
+        <button class="nav__burger" id="navBurger" aria-expanded="false" aria-controls="navDrawer"
+          aria-label="فتح القائمة">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <nav class="nav__drawer" id="navDrawer" aria-label="قائمة متنقلة">
+    <a href="#about" class="nav__link">من نحن</a>
+    <a href="#gallery" class="nav__link">المعرض</a>
+    <a href="#why" class="nav__link">لماذا نحن؟</a>
+    <a href="#features" class="nav__link">مميزاتنا</a>
+    <a href="#process" class="nav__link">كيف نعمل</a>
+    <a href="#contact" class="nav__link">تواصل معنا</a>
+    <a href="#form" class="nav__cta btn">طلب عرض سعر مجاني</a>
+  </nav>
+
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section class="hero" aria-labelledby="hero-h1">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <span class="hero__side-label" aria-hidden="true">Aya Uniforms · 2025</span>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow">عبايات رسمية مخصصة للشركات</div>
+
+      <h1 class="hero__title" id="hero-h1">
+        لأن الانطباع الأول<br>
+        <em>يبدأ من المظهر</em>
+      </h1>
+
+      <p class="hero__sub">
+        ننفذ لكم زي نسائي موحد من عبايات وطرح رسمية مخصصة للمنظمات، بجودة عالية وتفاصيل أنيقة تمنح فريقك حضورًا موحدًا
+        واحترافيًا أمام الجمهور.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#form" class="btn btn-solid">طلب عرض سعر</a>
+        <a href="#gallery" class="btn btn-ghost-light">أمثلة وتصاميم</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-cue" aria-hidden="true">
+      <div class="hero__scroll-arrow"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════ TICKER ═══════════════════════ -->
+  <div class="ticker" role="marquee" aria-label="مميزاتنا">
+    <div class="ticker__track">
+      <span class="ticker__item">✦ &nbsp;دعم كامل من فريق متخصص</span>
+      <span class="ticker__sep">&nbsp;·&nbsp;</span>
+      <span class="ticker__item">تطريز عالي الجودة</span>
+      <span class="ticker__sep">&nbsp;·&nbsp;</span>
+      <span class="ticker__item">خامات راقية ومعتمدة</span>
+      <span class="ticker__sep">&nbsp;·&nbsp;</span>
+      <span class="ticker__item">تصميم مخصص بهوية شركتك</span>
+      <span class="ticker__sep">&nbsp;·&nbsp;</span>
+      <span class="ticker__item">عينة قبل الإنتاج الكامل</span>
+      <span class="ticker__sep">&nbsp;·&nbsp;</span>
+      <span class="ticker__item">تغليف احترافي للشركات</span>
+      <span class="ticker__sep">&nbsp;·&nbsp;</span>
+      <!-- duplicate for seamless loop -->
+      <span class="ticker__item">✦ &nbsp;دعم كامل من فريق متخصص</span>
+      <span class="ticker__sep">&nbsp;·&nbsp;</span>
+      <span class="ticker__item">تطريز عالي الجودة</span>
+      <span class="ticker__sep">&nbsp;·&nbsp;</span>
+      <span class="ticker__item">خامات راقية ومعتمدة</span>
+      <span class="ticker__sep">&nbsp;·&nbsp;</span>
+      <span class="ticker__item">تصميم مخصص بهوية شركتك</span>
+      <span class="ticker__sep">&nbsp;·&nbsp;</span>
+      <span class="ticker__item">عينة قبل الإنتاج الكامل</span>
+      <span class="ticker__sep">&nbsp;·&nbsp;</span>
+      <span class="ticker__item">تغليف احترافي للشركات</span>
+      <span class="ticker__sep">&nbsp;·&nbsp;</span>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════ ABOUT AYA ═══════════════════════ -->
+  <section class="about-aya" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+
+      <div class="about-aya__header reveal">
+        <div class="about-aya__logo">
+          <img src="assets/aya-logo-en-ar.svg" alt="آيا" width="110" height="39">
+        </div>
+        <div class="eyebrow">من نحن</div>
+        <h2 class="section-title" id="about-title">أكبر منصة عبايات في الخليج</h2>
+        <p class="section-sub">
+          آيا منصة سعودية رائدة في عالم العبايات، تصمم وتنفّذ العبايات، تبني علامات تجارية خاصة، وتجمع نخبة المصممين
+          والعلامات الخليجية في تجربة عصرية متكاملة.
+          ومن خلال Aya Uniforms نقدم حلول أزياء رسمية نسائية للمنظمات بعبايات وطرح تعكس هوية العلامة التجارية بأسلوب
+          احترافي أنيق.
+        </p>
+      </div>
+
+      <div class="about-aya__stats reveal" data-delay="100">
+        <div class="about-aya__stat">
+          <div class="about-aya__stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </div>
+          <div class="about-aya__stat-num">+100 ألف</div>
+          <div class="about-aya__stat-label">عميل</div>
+        </div>
+        <div class="about-aya__stat">
+          <div class="about-aya__stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="6" cy="6" r="3" />
+              <circle cx="6" cy="18" r="3" />
+              <line x1="20" y1="4" x2="8.12" y2="15.88" />
+              <line x1="14.47" y1="14.48" x2="20" y2="20" />
+              <line x1="8.12" y1="8.12" x2="12" y2="12" />
+            </svg>
+          </div>
+          <div class="about-aya__stat-num">+3,000</div>
+          <div class="about-aya__stat-label">تصميم</div>
+        </div>
+        <div class="about-aya__stat">
+          <div class="about-aya__stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </div>
+          <div class="about-aya__stat-num">+6</div>
+          <div class="about-aya__stat-label">دول</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════ GALLERY ═══════════════════════ -->
+  <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+
+    <div class="wrap">
+      <div class="section-header reveal">
+        <div class="eyebrow">أمثلة وخيارات</div>
+        <h2 class="section-title" id="gallery-title">تنوع في الرؤية والتصميم</h2>
+        <p class="section-sub">
+          أمثلة مختارة من عدة قطاعات تعكس اختلاف الأساليب الإبداعية وطريقة إبراز هوية كل مشروع. </p>
+      </div>
+    </div>
+
+    <!-- Full-width horizontal scroll -->
+    <div class="gallery__scroll-wrap">
+      <div class="gallery__track" id="galleryTrack" role="list">
+
+        <div class="gallery__card reveal" role="listitem">
+          <img src="assets/MWG0-01.jpg" alt="زي موحد — جامعات" loading="lazy" width="320" height="427">
+          <div class="gallery__badge">جامعات</div>
+        </div>
+
+        <div class="gallery__card reveal" data-delay="60" role="listitem">
+          <img src="assets/gallery-retail.jpg" alt="زي موحد — قطاع التجزئة" loading="lazy" width="320" height="427">
+          <div class="gallery__badge">التجزئة</div>
+        </div>
+
+        <div class="gallery__card reveal" data-delay="120" role="listitem">
+          <img src="assets/gallery-transport.jpg" alt="زي موحد — المطارات" loading="lazy" width="320"
+            height="427">
+          <div class="gallery__badge">المطارات</div>
+        </div>
+
+        <div class="gallery__card reveal" data-delay="180" role="listitem">
+          <img src="assets/gallery-telecom.jpg" alt="زي موحد — الاتصالات" loading="lazy" width="320" height="427">
+          <div class="gallery__badge">الاتصالات</div>
+        </div>
+
+        <div class="gallery__card reveal" data-delay="240" role="listitem">
+          <img src="assets/gallery-metro.jpg" alt="زي موحد — المترو" loading="lazy" width="320" height="427">
+          <div class="gallery__badge">المترو</div>
+        </div>
+
+        <div class="gallery__card reveal" data-delay="300" role="listitem">
+          <img src="assets/gallery-banking.jpg" alt="زي موحد — البنوك" loading="lazy" width="320" height="427">
+          <div class="gallery__badge">البنوك</div>
+        </div>
+
+        <div class="gallery__card reveal" data-delay="360" role="listitem">
+          <img src="assets/gallery-beauty.jpg" alt="زي موحد — التجميل" loading="lazy" width="320" height="427">
+          <div class="gallery__badge">التجميل</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Arrows + progress -->
+    <div class="wrap">
+      <div class="gallery__arrows">
+        <button class="gallery__arrow" id="galleryPrev" aria-label="السابق">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+        <button class="gallery__arrow" id="galleryNext" aria-label="التالي">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+      </div>
+      <div class="gallery__progress" role="progressbar" aria-label="تقدم التنقل">
+        <div class="gallery__progress-fill" id="galleryFill"></div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════ WHY ═══════════════════════ -->
+  <section class="why" id="why" aria-labelledby="why-title">
+    <div class="wrap">
+      <div class="why__layout">
+
+        <!-- Sticky side -->
+        <div class="why__sticky reveal">
+          <div class="eyebrow">أهمية الزي الموحد</div>
+          <h2 class="section-title" id="why-title">
+            أكثر من مجرد مظهر
+          </h2>
+          <p class="section-sub">
+            الزي الموحد ليس مجرد مظهر، بل امتداد لهوية العلامة ورسالة تعكس احترافية الشركة وتمنح فريق العمل حضورًا
+            متناسقًا يترك انطباعًا أقوى لدى العملاء. </p>
+          <div class="why__divider" style="margin-top:28px"></div>
+          <div style="margin-top: 36px">
+            <a href="#form" class="btn btn-ghost-dark">اطلبوا تصميمكم الآن</a>
+          </div>
+        </div>
+
+        <!-- Scrolling cards -->
+        <div class="why__cards">
+
+          <div class="why__card reveal">
+            <div class="why__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <div class="why__body">
+              <span class="why__num">هوية احترافية</span>
+              <p>يعزز حضور العلامة التجارية ويمنح فريق العمل مظهرًا موحدًا يعكس الثقة والاحترافية في كل تعامل.</p>
+            </div>
+          </div>
+
+          <div class="why__card reveal" data-delay="80">
+            <div class="why__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <div class="why__body">
+              <span class="why__num">روح الفريق والانتماء</span>
+              <p>يساهم في تعزيز الانتماء بين الموظفين ويخلق صورة متناسقة تعبر عن ثقافة الشركة.</p>
+            </div>
+          </div>
+
+          <div class="why__card reveal" data-delay="160">
+            <div class="why__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+            </div>
+            <div class="why__body">
+              <span class="why__num">تجربة أكثر تنظيمًا</span>
+              <p>يسهل تمييز الموظفين ويمنح العملاء تجربة أكثر وضوحًا وراحة أثناء التعامل.</p>
+            </div>
+          </div>
+
+          <div class="why__card reveal" data-delay="240">
+            <div class="why__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </div>
+            <div class="why__body">
+              <span class="why__num">مظهر ثابت في كل مناسبة</span>
+              <p>يحافظ على اتساق المظهر العام للشركة في الاجتماعات والفعاليات والبيئات اليومية المختلفة.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════ FEATURES ═══════════════════════ -->
+  <section class="features" id="features" aria-labelledby="features-title">
+    <div class="wrap">
+
+      <div class="section-header reveal">
+        <div class="eyebrow">مميزاتنا</div>
+        <h2 class="section-title" id="features-title">تفاصيل مدروسة تعكس هويتكم</h2>
+      </div>
+
+      <div class="features__grid">
+
+        <article class="feature reveal" data-delay="0">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7" />
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+            </svg>
+          </div>
+          <div class="feature__body">
+            <h3 class="feature__title">خبرة متخصصة في العبايات</h3>
+            <p class="feature__desc">نصمم عبايات بهوية راقية وخطوط أنيقة تجمع بين الفخامة العملية والتفاصيل المتقنة
+              لتناسب مختلف أساليب الحياة والعمل.</p>
+          </div>
+        </article>
+
+        <article class="feature reveal" data-delay="80">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 19l7-7 3 3-7 7-3-3z" />
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+              <path d="M2 2l7.5 7.5" />
+              <circle cx="11" cy="11" r="2" />
+            </svg>
+          </div>
+          <div class="feature__body">
+            <h3 class="feature__title">تصميم يعكس هويتكم</h3>
+            <p class="feature__desc">نحوّل ألوان وشخصية علامتكم التجارية إلى تصاميم موحدة تعبر عنكم بأناقة واتساق في كل
+              تفصيلة.</p>
+          </div>
+        </article>
+
+        <article class="feature reveal" data-delay="160">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+          </div>
+          <div class="feature__body">
+            <h3 class="feature__title">تصاميم موسمية ومناسبات خاصة</h3>
+            <p class="feature__desc">خيارات متنوعة تناسب الصيف والشتاء والفعاليات والمواسم المختلفة لضمان حضور متجدد
+              طوال العام.</p>
+          </div>
+        </article>
+
+        <article class="feature reveal" data-delay="0">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" />
+              <line x1="16" y1="8" x2="2" y2="22" />
+              <line x1="17.5" y1="15" x2="9" y2="15" />
+            </svg>
+          </div>
+          <div class="feature__body">
+            <h3 class="feature__title">خامات عملية ومريحة</h3>
+            <p class="feature__desc">أقمشة مختارة بعناية تجمع بين الراحة والانسيابية والمظهر الأنيق للاستخدام اليومي.
+            </p>
+          </div>
+        </article>
+
+        <article class="feature reveal" data-delay="80">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="23 4 23 10 17 10" />
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
+            </svg>
+          </div>
+          <div class="feature__body">
+            <h3 class="feature__title">سهولة الطلب وإعادة التوريد</h3>
+            <p class="feature__desc">تجربة سلسة لحفظ التصاميم والمقاسات وإعادة الطلب بسرعة عند الحاجة.</p>
+          </div>
+        </article>
+
+        <article class="feature reveal" data-delay="160">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <div class="feature__body">
+            <h3 class="feature__title">جودة ودعم مستمر</h3>
+            <p class="feature__desc">تشطيبات دقيقة وخدمة متابعة مرنة تضمن تجربة احترافية من أول طلب حتى ما بعد التسليم.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════ PROCESS ═══════════════════════ -->
+  <section class="process" id="process" aria-labelledby="process-title">
+    <div class="wrap">
+
+      <div class="process__header reveal">
+        <div class="eyebrow">كيف نعمل</div>
+        <h2 class="section-title section-title--light" id="process-title">من الفكرة إلى التسليم</h2>
+        <p class="section-sub section-sub--light">عملية مبسطة وشفافة نتولى بها كل التفاصيل من البداية.</p>
+      </div>
+
+      <ol class="process__steps">
+
+        <li class="process__step reveal" data-delay="0">
+          <div class="process__num">
+            <span class="process__num-inner">01</span>
+          </div>
+          <h3 class="process__step-title">تواصلوا معنا</h3>
+          <p class="process__step-desc">أرسلوا طلب عرض السعر مع احتياجات شركتكم، ونرد عليكم خلال 24 ساعة.</p>
+        </li>
+
+        <li class="process__step reveal" data-delay="100">
+          <div class="process__num">
+            <span class="process__num-inner">02</span>
+          </div>
+          <h3 class="process__step-title">تصميم مخصص</h3>
+          <p class="process__step-desc">يجهز فريقنا تصميمًا مخصصًا بألوان شركتكم وشعارها للاعتماد قبل الإنتاج.</p>
+        </li>
+
+        <li class="process__step reveal" data-delay="200">
+          <div class="process__num">
+            <span class="process__num-inner">03</span>
+          </div>
+          <h3 class="process__step-title">عينة للاعتماد</h3>
+          <p class="process__step-desc">نرسل عينة فعلية لمراجعة الجودة والتصميم قبل البدء بالتنفيذ الكامل.</p>
+        </li>
+
+        <li class="process__step reveal" data-delay="300">
+          <div class="process__num">
+            <span class="process__num-inner">04</span>
+          </div>
+          <h3 class="process__step-title">الإنتاج والتسليم</h3>
+          <p class="process__step-desc">بعد الاعتماد، ننتج ونسلم الطلب كاملًا بشكل منظم خلال المدة المتفق عليها.</p>
+        </li>
+
+        <li class="process__step reveal" data-delay="400">
+          <div class="process__num">
+            <span class="process__num-inner">05</span>
+          </div>
+          <h3 class="process__step-title">سهولة إعادة الطلب</h3>
+          <p class="process__step-desc">نحفظ تصاميمكم ومقاساتكم لتسهيل إعادة الطلب للموظفين الجدد في أي وقت وبأي كمية.
+          </p>
+        </li>
+
+      </ol>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════ FORM ═══════════════════════ -->
+  <section class="form-section" id="form" aria-labelledby="form-title">
+    <div class="wrap">
+
+      <div class="section-header">
+        <div class="eyebrow">بكل بساطة</div>
+        <h2 class="section-title section-title--light" id="form-title">اطلبوا تصميمكم الخاص</h2>
+        <p class="section-sub section-sub--light">أرسلوا تفاصيل احتياجاتكم وسيتواصل معكم فريقنا خلال 24 ساعة.</p>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="quoteForm" novalidate>
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label for="companyName">اسم المنظمة <span class="req">*</span></label>
+              <input type="text" id="companyName" name="companyName" placeholder="اسم الجهة أو الشركة" required
+                autocomplete="organization">
+            </div>
+
+            <div class="form-group">
+              <label for="repName">اسم مقدم الطلب <span class="req">*</span></label>
+              <input type="text" id="repName" name="repName" placeholder="اكتب اسمك هنا" required autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="jobTitle">المنصب الوظيفي <span class="req">*</span></label>
+              <input type="text" id="jobTitle" name="jobTitle" placeholder="اكتب المسمى الوظيفي هنا" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">رقم الجوال <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="05XXXXXXXX" required autocomplete="tel" dir="ltr"
+                style="text-align:right">
+            </div>
+
+            <div class="form-group full">
+              <label for="email">البريد الإلكتروني</label>
+              <input type="email" id="email" name="email" placeholder="example@company.com" autocomplete="email"
+                dir="ltr" style="text-align:right">
+            </div>
+
+            <div class="form-group full">
+              <label for="notes">ملاحظات الطلب</label>
+              <textarea id="notes" name="notes"
+                placeholder="عدد العبايات، الألوان المطلوبة، موعد التسليم، أي تفاصيل أو ملاحظات"></textarea>
+            </div>
+
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+              إرسال الطلب
+            </button>
+            <p class="form-note" id="formNote">سيتواصل معكم فريقنا خلال 24 ساعة</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section class="contact" id="contact" aria-labelledby="contact-label">
+    <p class="contact__label" id="contact-label">تواصلوا معنا عبر</p>
+    <div class="contact__links">
+
+      <a href="https://wa.me/qr/3GKSIAMLZZHIP1" class="contact__link" target="_blank" rel="noopener noreferrer"
+        aria-label="واتساب" title="واتساب">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+      </a>
+
+      <a href="https://www.instagram.com/aya.app_" class="contact__link" target="_blank" rel="noopener noreferrer"
+        aria-label="إنستغرام" title="إنستغرام">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+        </svg>
+      </a>
+
+      <a href="https://www.tiktok.com/@aya.app_" class="contact__link" target="_blank" rel="noopener noreferrer"
+        aria-label="تيك توك" title="تيك توك">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z" />
+        </svg>
+      </a>
+
+      <a href="https://apps.apple.com/sa/app/aya-%D8%A7%D9%8A%D8%A7/id6738651813" class="contact__link" target="_blank"
+        rel="noopener noreferrer" aria-label="آب ستور" title="آب ستور">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <rect x="5" y="2" width="14" height="20" rx="2.18" />
+          <line x1="12" y1="18" x2="12.01" y2="18" />
+        </svg>
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <p>© 2026 جميع الحقوق محفوظة — <a href="https://www.aya.app" target="_blank" rel="noopener noreferrer">منصة آيا</a>
+    </p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
