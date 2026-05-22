@@ -157,11 +157,8 @@ ul, ol { list-style: none; }
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
   color: var(--burgundy);
   line-height: 1;
-  /* Shift slightly to account for RTL letter spacing if needed, but normally browser handles it nicely */
-  margin-inline-start: 0.18em; 
 }
 
 .nav__links {
@@ -284,7 +281,6 @@ ul, ol { list-style: none; }
   transform-origin: center center;
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 4px;
   text-transform: uppercase;
   color: rgba(255,255,255,0.30);
 }
@@ -305,7 +301,6 @@ ul, ol { list-style: none; }
   gap: 10px;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--biscuit);
   margin-bottom: 20px;
@@ -361,7 +356,6 @@ ul, ol { list-style: none; }
   gap: 8px;
   color: rgba(255,255,255,0.40);
   font-size: 10px;
-  letter-spacing: 2px;
 }
 .hero__scroll-cue span { writing-mode: horizontal-tb; }
 .hero__scroll-arrow {
@@ -446,7 +440,6 @@ ul, ol { list-style: none; }
   font-size: 13px;
   font-weight: 600;
   color: var(--biscuit-lt);
-  letter-spacing: 0.3px;
 }
 .ticker__sep {
   color: rgba(209,173,134,0.4);
@@ -615,7 +608,6 @@ ul, ol { list-style: none; }
   font-size: 13px;
   font-weight: 600;
   color: var(--text-muted);
-  letter-spacing: 0.5px;
 }
 
 @media (max-width: 768px) {
@@ -653,7 +645,6 @@ ul, ol { list-style: none; }
   gap: 10px;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--biscuit-dk);
   margin-bottom: 14px;
@@ -708,6 +699,11 @@ ul, ol { list-style: none; }
   position: relative;
   aspect-ratio: 3 / 4;
   background: var(--offwhite-dk);
+  -webkit-touch-callout: none; /* Prevent iOS link/image long-press menu */
+  -webkit-user-drag: none;     /* Prevent dragging of the element/images */
+  user-drag: none;
+  user-select: none;           /* Prevent selection/highlighting */
+  -webkit-user-select: none;
 }
 .gallery__card img {
   width: 100%;
@@ -715,6 +711,8 @@ ul, ol { list-style: none; }
   object-fit: cover;
   transition: transform 0.6s var(--ease);
   pointer-events: none;
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 .gallery__card:hover img { transform: scale(1.06); }
 
@@ -732,7 +730,6 @@ ul, ol { list-style: none; }
   font-size: 11px;
   font-weight: 700;
   color: var(--white);
-  letter-spacing: 0.5px;
 }
 
 /* Caption slides up on hover */
@@ -869,7 +866,6 @@ ul, ol { list-style: none; }
   font-family: var(--head);
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 2px;
   color: var(--biscuit);
   line-height: 1;
   transition: color 0.3s;
@@ -1086,7 +1082,6 @@ ul, ol { list-style: none; }
   font-size: 12px;
   font-weight: 700;
   color: var(--black);
-  letter-spacing: 0.3px;
 }
 .form-group label .req { color: var(--pink); margin-inline-start: 2px; }
 
@@ -1176,7 +1171,6 @@ ul, ol { list-style: none; }
 .contact__label {
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--text-dim);
   margin-bottom: 36px;
